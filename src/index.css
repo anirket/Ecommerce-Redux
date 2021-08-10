@@ -1,13 +1,45 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.logo{
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: -1px 0px 0px #45b3e0, 1px 1px 0px #45b3e0, 2px 2px 0px #45b3e0;
+
+}
+.navbar{
+    height: 9vh;
+background-color: #89d8d3;
+background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+}
+.navelements{
+    width: 48vw;
+}
+.card{
+    height: 81vh;
+    width: 88vw;
+}
+.product_image{
+    height: 38vh;
+}
+.product_important_details{
+    width: 82vw;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@media only screen and (min-width:600px) {
+    
+    .card{
+        height: 84.5vh;
+        width: 33vw;
+    }
+    .product_image{
+        height: 38vh;
+    }
+    .product_important_details{
+        width: 30vw;
+    }
+    
 }
